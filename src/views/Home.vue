@@ -22,9 +22,15 @@
       <el-col :span="24">
         <h3>Contact Me</h3>
         <ul>
-          <li><a :href="'mailto:' + email">{{ email }}</a></li>
-          <li><a :href="'tel:' + phoneNumber">{{ phoneNumber }}</a></li>
-          <li><a :href="github">{{ github }}</a></li>
+          <li>
+            <a :href="'mailto:' + email">{{ email }}</a>
+          </li>
+          <li>
+            <a :href="'tel:' + phoneNumber">{{ phoneNumber }}</a>
+          </li>
+          <li>
+            <a :href="github">{{ github }}</a>
+          </li>
         </ul>
       </el-col>
     </el-row>
@@ -42,8 +48,8 @@ export default {
       email: "youremail@example.com",
       phoneNumber: "123-456-7890",
       github: "https://github.com/yourusername",
-      profilePictureUrl: "https://via.placeholder.com/400x400"
+      profilePictureUrl: "https://via.placeholder.com/400x400",
     };
-  }
+  },
 };
 </script>
